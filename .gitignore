@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+backend/cache/
+*.fits
+
+# Node
+node_modules/
+dist/
+.vercel/
+
+# Env / OS / editor
+.env
+.env.*
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# IRSA snapshot: image files are large (cut-outs ~370 MB, full images ~65 MB each)
+data/irsa_snapshot/cutouts/
+data/irsa_snapshot/full/
+*.part

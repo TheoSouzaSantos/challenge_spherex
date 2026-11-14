@@ -1,0 +1,104 @@
+[
+ {
+  "slug": "barnards-star",
+  "name": "Barnard's Star",
+  "kind": "mover",
+  "default_det": 2,
+  "blurb": "The fastest-moving star in our sky: about 10 arcseconds per year.",
+  "ra": 269.4463750927921,
+  "dec": 4.768645662032073,
+  "simulated": false,
+  "dets": [
+   2,
+   4,
+   6
+  ],
+  "visits": 3,
+  "offline": false
+ },
+ {
+  "slug": "epsilon-indi-b",
+  "name": "Epsilon Indi B",
+  "kind": "mover",
+  "default_det": 5,
+  "blurb": "A pair of brown dwarfs orbiting the bright star Epsilon Indi A, 12 light-years away.",
+  "ra": 331.09700130878497,
+  "dec": -56.800719806513,
+  "simulated": false,
+  "dets": [
+   3,
+   5,
+   6
+  ],
+  "visits": 5,
+  "offline": false
+ },
+ {
+  "slug": "wise-0855",
+  "name": "WISE 0855-0714",
+  "kind": "mover",
+  "default_det": 6,
+  "blurb": "The coldest known brown dwarf, about as cold as the North Pole. Invisible at short wavelengths.",
+  "ra": 133.75944618567738,
+  "dec": -7.242244804426485,
+  "simulated": false,
+  "dets": [
+   2,
+   5,
+   6
+  ],
+  "visits": 4,
+  "offline": false
+ },
+ {
+  "slug": "rw-aurigae",
+  "name": "RW Aurigae",
+  "kind": "variable",
+  "default_det": 3,
+  "blurb": "A young star wrapped in a dusty disk; its brightness jumps unpredictably.",
+  "ra": 76.95608781822494,
+  "dec": 30.401127130003488,
+  "simulated": false,
+  "dets": [
+   1,
+   3,
+   5
+  ],
+  "visits": 3,
+  "offline": false
+ },
+ {
+  "slug": "r-draconis",
+  "name": "R Draconis",
+  "kind": "variable",
+  "default_det": 3,
+  "blurb": "A pulsating red giant (Mira variable) that brightens and fades over about 8 months.",
+  "ra": 248.16723159227678,
+  "dec": 66.75502410372376,
+  "simulated": false,
+  "dets": [
+   1,
+   3,
+   5
+  ],
+  "visits": 15,
+  "offline": false
+ },
+ {
+  "slug": "m31",
+  "name": "Andromeda Galaxy (M31)",
+  "kind": "galaxy",
+  "default_det": 1,
+  "blurb": "Our big neighbour galaxy, 2.5 million light-years away. Nothing here moves, which makes it a good control.",
+  "ra": 10.6847,
+  "dec": 41.2687,
+  "simulated": false,
+  "dets": [
+   1,
+   3,
+   5
+  ],
+  "visits": 4,
+  "offline": false
+ }
+]

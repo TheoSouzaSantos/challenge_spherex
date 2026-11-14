@@ -1,0 +1,121 @@
+{
+ "name": "cosmosight-prebaked-targets",
+ "title": "CosmoSight prebaked test targets",
+ "generated_by_ai": false,
+ "resources": [
+  {
+   "name": "barnards-star",
+   "path": "barnards-star/meta.json",
+   "format": "json",
+   "title": "Barnard's Star: per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  },
+  {
+   "name": "epsilon-indi-b",
+   "path": "epsilon-indi-b/meta.json",
+   "format": "json",
+   "title": "Epsilon Indi B: per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  },
+  {
+   "name": "wise-0855",
+   "path": "wise-0855/meta.json",
+   "format": "json",
+   "title": "WISE 0855-0714: per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  },
+  {
+   "name": "rw-aurigae",
+   "path": "rw-aurigae/meta.json",
+   "format": "json",
+   "title": "RW Aurigae: per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  },
+  {
+   "name": "r-draconis",
+   "path": "r-draconis/meta.json",
+   "format": "json",
+   "title": "R Draconis: per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  },
+  {
+   "name": "m31",
+   "path": "m31/meta.json",
+   "format": "json",
+   "title": "Andromeda Galaxy (M31): per-visit SPHEREx frames and metadata",
+   "simulated": false,
+   "generated_by_ai": false,
+   "description": "Real SPHEREx Level 2 cut-outs read from the NASA SPHEREx open data bucket on AWS (found with NASA/IPAC IRSA), processed by backend/pipeline.py.",
+   "sources": [
+    {
+     "title": "SPHEREx (NASA/IPAC IRSA)",
+     "path": "https://irsa.ipac.caltech.edu/Missions/spherex.html"
+    },
+    {
+     "title": "Gaia DR3 (ESA)",
+     "path": "https://www.cosmos.esa.int/web/gaia/dr3"
+    }
+   ]
+  }
+ ]
+}
