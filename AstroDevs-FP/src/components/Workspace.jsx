@@ -17,6 +17,7 @@ export default function Workspace({ meta, frames, renderState, tool, onPick, sta
   const [notes, setNotes] = useState([])
   const [failed, setFailed] = useState('')
   const [scale, setScale] = useState(0)
+  const [shown, setShown] = useState(SIZE) // on-screen width: the canvas is drawn at SIZE and scaled by CSS on small screens
 
   useEffect(() => {
     let alive = true
@@ -53,7 +54,8 @@ export default function Workspace({ meta, frames, renderState, tool, onPick, sta
 
   const local = (e) => {
     const r = host.current.getBoundingClientRect()
-    return [e.clientX - r.left, e.clientY - r.top]
+    const k = SIZE / (r.width || SIZE)
+    return [(e.clientX - r.left) * k, (e.clientY - r.top) * k]
   }
 
   const onPointerDown = (e) => {
@@ -91,6 +93,12 @@ export default function Workspace({ meta, frames, renderState, tool, onPick, sta
   }
 
   useEffect(() => {
+    const ro = new ResizeObserver(([e]) => setShown(e.contentRect.width || SIZE))
+    ro.observe(host.current)
+    return () => ro.disconnect()
+  }, [])
+
+  useEffect(() => {
     const h = host.current
     h.addEventListener('wheel', onWheel, { passive: false })
     return () => h.removeEventListener('wheel', onWheel)
@@ -101,13 +109,13 @@ export default function Workspace({ meta, frames, renderState, tool, onPick, sta
   return (
     <div className="workspace">
       <div
-        ref={host} className={`stage tool-${tool}`} style={{ width: SIZE, height: SIZE }}
+        ref={host} className={`stage tool-${tool}`} style={{ maxWidth: SIZE }}
         onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp}
         onDoubleClick={() => { stage.current?.resetView(); rerender() }}
         role="img" aria-label="Selected sky region"
       />
       {scaleBar && (
-        <div className="scalebar" style={{ width: scaleBar.px }}><span>{scaleBar.label}</span></div>
+        <div className="scalebar" style={{ width: scaleBar.px * shown / SIZE }}><span>{scaleBar.label}</span></div>
       )}
       <div className="compass" aria-hidden="true"><span className="n">N</span><span className="e">E</span></div>
       {meta?.simulated && <div className="watermark" aria-hidden="true">SIMULATED DATA · not SPHEREx pixels</div>}

@@ -1,6 +1,6 @@
 # Fluxo de trabalho: céu interativo SPHEREx (web desktop, React + PixiJS)
 
-Público-alvo: entusiastas de astronomia. Só desktop (largura mínima 1280 px, sem layout mobile).
+Público-alvo: entusiastas de astronomia. Pensado para desktop (≥1280 px), mas responsivo: abaixo de 1180 px o painel encolhe, abaixo de 900 px mapa e painel empilham, abaixo de 600 px layout de celular.
 Documento interno da equipe (PT). Tudo que o usuário/jurado vê continua em inglês.
 
 ## 1. Interface e onde cada função mora
